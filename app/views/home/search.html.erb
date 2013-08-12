@@ -1,0 +1,9 @@
+<h1>Search Results</h1>
+<p>You seached for "<%= @search %>" </p>
+
+<%= @search_results %>
+<% unless @search_results %>
+  <% @search_results.each do |sr| %>
+    <%= sr %>
+  <% end %>
+<% end %>
